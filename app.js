@@ -4,8 +4,9 @@
 const profileDataArgs = process.argv.slice(2, process.argv.length);
 
 const printProfileData = (profileDataArr) => {
-    console.log(profileDataArr);
-  };
+    // or const printProfileData = profileDataArr => { (we do not need parantheses as we only pass through one argument)
+  for (let i = 0; i < profileDataArr.length; i++) {
+    console.log(profileDataArr[i]);
+}  };
   
   printProfileData(profileDataArgs);
-  
